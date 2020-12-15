@@ -46,19 +46,6 @@ def getAllValidSeries(maxPathAsDecimal, pathLength, base):
     return validNumbers
 
 
-
-# pathLength = 3
-
-# hdig = highestBase3(pathLength)
-# hdigAsDec = ternary(hdig)
-# print(str(hdigAsDec))
-# print(sumOfDigitsFits(hdigAsDec,pathLength))
-# validSeries = getAllValidSeries(hdig,pathLength)
-
-
-# print(validSeries)
-
-
 def numberOfPossibilities(distance):
     base = 4
     pathLength = distance+1
@@ -70,7 +57,3 @@ def numberOfPossibilities(distance):
     paths = getAllValidSeries(longestPathDecimal, pathLength, base)
     return len(paths)
 
-
-
-#make from this i a baseX number again
-#if the sum == path an its unique, add it
