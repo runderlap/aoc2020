@@ -26,11 +26,11 @@ for i in range(len(nums)-1):
         skippableStreak += 1
     elif skippableStreak>0:
         print(nums[i-skippableStreak:i])
-        totalPossibilities *= tst.numberOfPossibilities(skippableStreak)
+        totalPossibilities *= pathcounter.numberOfPossibilities(skippableStreak)
         skippableStreak = 0
 #one last time for the 'tail' of the series
 if skippableStreak>0:
     print(nums[i-skippableStreak:i])
-    totalPossibilities *= tst.numberOfPossibilities(skippableStreak)
+    totalPossibilities *= pathcounter.numberOfPossibilities(skippableStreak)
 
 print(str(totalPossibilities))
